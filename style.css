@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(192, 250, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.app-container{
+    background: rgb(65, 66, 87);
+    height: 560px;
+    width: 370px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: right;
+}
+
+.number-box{
+    display: block;
+    color: white;
+    font-size: 40px;
+    height: 40px;
+    /* width: 100%; */
+    /* float: right; */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.button-container{
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 24px;
+    margin-top: 30px;
+}
+
+button{
+    box-shadow: -10px -10px 15px rgb(85, 85, 110), 10px 10px 15px rgb(57, 57, 75);
+    background: rgb(65, 66, 87);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#AC,#DE,#dot,#division,#multiplication,#subtraction,#addition,#equal{
+    color: aqua;
+}
+
+#division{
+    font-size: 30px;
+}
+
+#equal{
+    grid-column: span 2;
+}
